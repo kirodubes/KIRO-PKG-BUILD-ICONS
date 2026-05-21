@@ -8,14 +8,14 @@ This repo is a batch build pipeline for Arch Linux icon packages (`sardi-*`, `su
 
 ## Key scripts
 
-| Script | Role |
-|---|---|
-| `build.sh` | Per-package build script: bumps version, checks if build is needed, builds in chroot (`~/Documents/chroot-archlinux`) via `makechrootpkg`, copies `.pkg.tar.zst` to `~/EDU/nemesis_repo/x86_64/` |
-| `1-build-all-packages.sh` | Iterates every subdirectory, runs its `build*` script, then calls `~/EDU/nemesis_repo/up.sh` to publish the repo |
-| `copy-files-to-all-folders.sh` | Propagates the root-level `build.sh` to every package subdirectory that already has one (repo-name detection: copies `build.sh` when repo name contains `pkgbuild`) |
-| `91-copy-build-data-to-all-folders.sh` | Older helper — copies `build-icons*` into every subdirectory (legacy, less structured) |
-| `setup.sh` | Configures the git remote to `git@github.com-edu:erikdubois/<project>` (SSH host alias) |
-| `up.sh` | Ensures git remote, pulls, optionally runs `chaotic.sh`/`repo.sh`, then commits and pushes |
+| Script                                 | Role                                                                                                                                                                                             |
+|----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `build.sh`                             | Per-package build script: bumps version, checks if build is needed, builds in chroot (`~/Documents/chroot-archlinux`) via `makechrootpkg`, copies `.pkg.tar.zst` to `~/EDU/nemesis_repo/x86_64/` |
+| `1-build-all-packages.sh`              | Iterates every subdirectory, runs its `build*` script, then calls `~/EDU/nemesis_repo/up.sh` to publish the repo                                                                                 |
+| `copy-files-to-all-folders.sh`         | Propagates the root-level `build.sh` to every package subdirectory that already has one (repo-name detection: copies `build.sh` when repo name contains `pkgbuild`)                              |
+| `91-copy-build-data-to-all-folders.sh` | Older helper — copies `build-icons*` into every subdirectory (legacy, less structured)                                                                                                           |
+| `setup.sh`                             | Configures the git remote to `git@github.com-edu:erikdubois/<project>` (SSH host alias)                                                                                                          |
+| `up.sh`                                | Ensures git remote, pulls, optionally runs `chaotic.sh`/`repo.sh`, then commits and pushes                                                                                                       |
 
 ## Version scheme
 
