@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="kiro.jpg" alt="Kiro" width="220" />
+</p>
+
 # edu-pkgbuild-icons
 
 Batch build pipeline for Arch Linux icon packages — sardi, surfn, neo-candy and more — published to the [nemesis_repo](https://github.com/erikdubois/nemesis_repo) custom pacman repository.
