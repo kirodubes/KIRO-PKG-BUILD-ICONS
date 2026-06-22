@@ -1,7 +1,7 @@
 # Maintainer: Erik Dubois <erik.dubois@gmail.com>
 pkgname=surfn-plasma-light-icons-git
-pkgver=26.05
-pkgrel=01
+pkgver=26.06
+pkgrel=04
 _destname1="/usr/share/icons/"
 #_destname2="/usr/share/plasma/look-and-feel/"
 pkgdesc="Surfn Plasma Light is created to go with Plasma"
