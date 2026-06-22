@@ -1,0 +1,21 @@
+# Maintainer: Erik Dubois <erik.dubois@gmail.com>
+pkgname=surfing-icons-git
+pkgver=26.06
+pkgrel=20
+_destname1="/usr/share/icons/"
+pkgdesc="Surfing icon theme — Breeze-style context-first layout (Surfn icons + Breeze applets/preferences)"
+arch=('any')
+url="https://github.com/erikdubois/Surfing"
+license=('custom')
+makedepends=('git')
+optdepends=('breeze-icons: fallback icons resolved through the Inherits chain')
+provides=('surfing-icons-git')
+conflicts=('surfing-icons-git')
+options=(!strip !emptydirs)
+source=('Surfing::git+https://github.com/erikdubois/Surfing.git')
+sha256sums=('SKIP')
+
+package() {
+  install -dm 755 ${pkgdir}${_destname1}
+  cp -r ${srcdir}/Surfing/${_destname1}* ${pkgdir}${_destname1}
+}
