@@ -1,20 +1,20 @@
 # Maintainer: Erik Dubois <erik.dubois@gmail.com>
 pkgname=surfn-icons-git
 pkgver=26.06
-pkgrel=01
+pkgrel=13
 epoch=2
 _destname="/usr/share/icons/"
-pkgdesc="Surfn is a colourful icon theme."
+pkgdesc="Surfn is a colourful icon theme (base theme)."
 arch=('any')
-url="https://github.com/erikdubois/Surfn"
+url="https://github.com/erikdubois/surfn"
 license=('Attribution-NonCommercial-ShareAlike 4.0 International Public License')
 makedepends=('git')
 options=(!strip !emptydirs)
-source=('Surfn::git+https://github.com/erikdubois/Surfn.git')
+source=('Surfn::git+https://github.com/erikdubois/surfn.git')
 sha256sums=('SKIP')
 
 package() {
-  find ${srcdir}/Surfn/surfn-icons -type f -name "*.sh" -exec chmod 644 '{}' \;
+  find ${srcdir}/Surfn/usr/share/icons -type f -name "*.sh" -exec chmod 644 '{}' \;
   install -dm 755 ${pkgdir}${_destname}
-  cp -r ${srcdir}/Surfn/surfn-icons/* ${pkgdir}${_destname}
+  cp -r ${srcdir}/Surfn/usr/share/icons/* ${pkgdir}${_destname}
 }
