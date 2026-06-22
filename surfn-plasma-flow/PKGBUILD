@@ -2,7 +2,7 @@
 pkgname=surfn-plasma-flow-git
 _pkgname=surfn-plasma-flow
 pkgver=26.06
-pkgrel=02
+pkgrel=04
 _destname1="/usr/share/icons/"
 _destname2="/usr/share/plasma/"
 pkgdesc="Surfn icons combined with dark blue plasma folders"
