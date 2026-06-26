@@ -1,0 +1,32 @@
+# Maintainer: Erik Dubois <erik.dubois@gmail.com>
+pkgname=neo-candy-horst-meta
+pkgver=26.06
+pkgrel=03
+pkgdesc="Neo Candy Horst — all colour folder themes"
+arch=('any')
+url="https://github.com/erikdubois/neo-candy-horst-meta"
+license=('GPL3')
+options=(!strip !emptydirs)
+depends=(
+  'neo-candy-icons-git'
+  'neo-candy-horst-green-icons-git'
+  'neo-candy-horst-aqua-icons-git'
+  'neo-candy-horst-blue-icons-git'
+  'neo-candy-horst-dark-blue-icons-git'
+  'neo-candy-horst-brown-icons-git'
+  'neo-candy-horst-grey-icons-git'
+  'neo-candy-horst-lilac-icons-git'
+  'neo-candy-horst-orange-icons-git'
+  'neo-candy-horst-pink-icons-git'
+  'neo-candy-horst-purple-icons-git'
+  'neo-candy-horst-red-icons-git'
+  'neo-candy-horst-sand-icons-git'
+  'neo-candy-horst-teal-icons-git'
+  'neo-candy-horst-yellow-icons-git'
+  'neo-candy-horst-casablanca-icons-git'
+)
+source=()
+
+package() {
+  :
+}
