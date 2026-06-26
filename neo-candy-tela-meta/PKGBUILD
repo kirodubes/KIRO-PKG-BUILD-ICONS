@@ -1,0 +1,32 @@
+# Maintainer: Erik Dubois <erik.dubois@gmail.com>
+pkgname=neo-candy-tela-meta
+pkgver=26.06
+pkgrel=08
+pkgdesc="Neo Candy Tela — all colour folder themes"
+arch=('any')
+url="https://github.com/erikdubois/neo-candy-tela-meta"
+license=('GPL3')
+options=(!strip !emptydirs)
+depends=(
+  'neo-candy-icons-git'
+  'neo-candy-tela-black-icons-git'
+  'neo-candy-tela-blue-icons-git'
+  'neo-candy-tela-brown-icons-git'
+  'neo-candy-tela-dracula-icons-git'
+  'neo-candy-tela-green-icons-git'
+  'neo-candy-tela-grey-icons-git'
+  'neo-candy-tela-icons-git'
+  'neo-candy-tela-manjaro-icons-git'
+  'neo-candy-tela-nord-icons-git'
+  'neo-candy-tela-orange-icons-git'
+  'neo-candy-tela-pink-icons-git'
+  'neo-candy-tela-purple-icons-git'
+  'neo-candy-tela-red-icons-git'
+  'neo-candy-tela-ubuntu-icons-git'
+  'neo-candy-tela-yellow-icons-git'
+)
+source=()
+
+package() {
+  :
+}
