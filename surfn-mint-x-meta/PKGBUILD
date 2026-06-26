@@ -1,0 +1,28 @@
+# Maintainer: Erik Dubois <erik.dubois@gmail.com>
+pkgname=surfn-mint-x-meta
+pkgver=26.06
+pkgrel=01
+pkgdesc="Surfn Mint-X — meta package pulling all 11 Surfn Mint-X colour icon themes"
+arch=('any')
+url="https://github.com/erikdubois/surfn-mint-x-meta"
+license=('GPL3')
+options=(!strip !emptydirs)
+depends=(
+  'surfn-icons-git'
+  'surfn-mint-x-aqua-icons-git'
+  'surfn-mint-x-blue-icons-git'
+  'surfn-mint-x-brown-icons-git'
+  'surfn-mint-x-grey-icons-git'
+  'surfn-mint-x-orange-icons-git'
+  'surfn-mint-x-pink-icons-git'
+  'surfn-mint-x-purple-icons-git'
+  'surfn-mint-x-red-icons-git'
+  'surfn-mint-x-sand-icons-git'
+  'surfn-mint-x-teal-icons-git'
+  'surfn-mint-x-yellow-icons-git'
+)
+source=()
+
+package() {
+  :
+}
