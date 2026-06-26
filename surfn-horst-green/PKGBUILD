@@ -1,0 +1,19 @@
+# Maintainer: Erik Dubois <erik.dubois@gmail.com>
+pkgname=surfn-horst-green-icons-git
+pkgver=26.06
+pkgrel=02
+_destname1="/usr/share/icons/"
+pkgdesc="Surfn Horst-Green icon theme"
+arch=('any')
+url="https://github.com/erikdubois/surfn-horst-green"
+license=('GPL3')
+makedepends=('git')
+options=(!strip !emptydirs)
+depends=('surfn-icons-git')
+source=('Surfn::git+https://github.com/erikdubois/surfn-horst-green.git')
+sha256sums=('SKIP')
+
+package() {
+  install -dm 755 ${pkgdir}${_destname1}
+  cp -r ${srcdir}/Surfn/${_destname1}* ${pkgdir}${_destname1}
+}
