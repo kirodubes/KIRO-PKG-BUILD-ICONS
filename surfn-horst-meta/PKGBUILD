@@ -1,0 +1,32 @@
+# Maintainer: Erik Dubois <erik.dubois@gmail.com>
+pkgname=surfn-horst-meta
+pkgver=26.06
+pkgrel=01
+pkgdesc="Surfn Horst — all colour folder themes"
+arch=('any')
+url="https://github.com/erikdubois/surfn-horst-meta"
+license=('GPL3')
+options=(!strip !emptydirs)
+depends=(
+  'surfn-icons-git'
+  'surfn-horst-green-icons-git'
+  'surfn-horst-aqua-icons-git'
+  'surfn-horst-blue-icons-git'
+  'surfn-horst-dark-blue-icons-git'
+  'surfn-horst-brown-icons-git'
+  'surfn-horst-grey-icons-git'
+  'surfn-horst-lilac-icons-git'
+  'surfn-horst-orange-icons-git'
+  'surfn-horst-pink-icons-git'
+  'surfn-horst-purple-icons-git'
+  'surfn-horst-red-icons-git'
+  'surfn-horst-sand-icons-git'
+  'surfn-horst-teal-icons-git'
+  'surfn-horst-yellow-icons-git'
+  'surfn-horst-casablanca-icons-git'
+)
+source=()
+
+package() {
+  :
+}
