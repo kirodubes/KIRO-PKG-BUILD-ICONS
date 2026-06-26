@@ -1,0 +1,43 @@
+# Maintainer: Erik Dubois <erik.dubois@gmail.com>
+pkgname=neo-candy-papirus-meta
+pkgver=26.06
+pkgrel=05
+pkgdesc="Neo Candy Papirus — all folder colour themes (incl. custom casablanca)"
+arch=('any')
+url="https://github.com/erikdubois/neo-candy-papirus-meta"
+license=('GPL3')
+options=(!strip !emptydirs)
+depends=(
+  'neo-candy-icons-git'
+  'neo-candy-papirus-adwaita-icons-git'
+  'neo-candy-papirus-black-icons-git'
+  'neo-candy-papirus-bluegrey-icons-git'
+  'neo-candy-papirus-blue-icons-git'
+  'neo-candy-papirus-breeze-icons-git'
+  'neo-candy-papirus-brown-icons-git'
+  'neo-candy-papirus-carmine-icons-git'
+  'neo-candy-papirus-casablanca-icons-git'
+  'neo-candy-papirus-cyan-icons-git'
+  'neo-candy-papirus-darkcyan-icons-git'
+  'neo-candy-papirus-deeporange-icons-git'
+  'neo-candy-papirus-green-icons-git'
+  'neo-candy-papirus-grey-icons-git'
+  'neo-candy-papirus-indigo-icons-git'
+  'neo-candy-papirus-magenta-icons-git'
+  'neo-candy-papirus-nordic-icons-git'
+  'neo-candy-papirus-orange-icons-git'
+  'neo-candy-papirus-palebrown-icons-git'
+  'neo-candy-papirus-paleorange-icons-git'
+  'neo-candy-papirus-pink-icons-git'
+  'neo-candy-papirus-red-icons-git'
+  'neo-candy-papirus-teal-icons-git'
+  'neo-candy-papirus-violet-icons-git'
+  'neo-candy-papirus-white-icons-git'
+  'neo-candy-papirus-yaru-icons-git'
+  'neo-candy-papirus-yellow-icons-git'
+)
+source=()
+
+package() {
+  :
+}
