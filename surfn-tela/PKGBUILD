@@ -1,12 +1,12 @@
 # Maintainer: Erik Dubois <erik.dubois@gmail.com>
 pkgname=surfn-tela-icons-git
 pkgver=26.06
-pkgrel=02
+pkgrel=04
 _destname1="/usr/share/icons/"
 pkgdesc="Surfn Tela icon theme"
 arch=('any')
 url="https://github.com/erikdubois/surfn-tela"
-license=('Attribution-NonCommercial-ShareAlike 4.0 International Public License')
+license=('GPL3')
 makedepends=('git')
 options=(!strip !emptydirs)
 depends=('surfn-icons-git')
