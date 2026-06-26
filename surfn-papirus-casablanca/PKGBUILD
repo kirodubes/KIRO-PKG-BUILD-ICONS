@@ -1,7 +1,7 @@
 # Maintainer: Erik Dubois <erik.dubois@gmail.com>
 pkgname=surfn-papirus-casablanca-icons-git
 pkgver=26.06
-pkgrel=02
+pkgrel=06
 _destname1="/usr/share/icons/"
 pkgdesc="Surfn Papirus Casablanca icon theme"
 arch=('any')
