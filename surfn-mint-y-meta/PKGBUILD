@@ -1,0 +1,33 @@
+# Maintainer: Erik Dubois <erik.dubois@gmail.com>
+pkgname=surfn-mint-y-meta
+pkgver=26.06
+pkgrel=01
+pkgdesc="Surfn Mint-Y — meta package pulling all 12 Surfn Mint-Y colour icon themes"
+arch=('any')
+url="https://github.com/erikdubois/surfn-mint-y-meta"
+license=('GPL3')
+options=(!strip !emptydirs)
+# Supersedes the old monolithic package: clean upgrade swap on -Syu.
+replaces=('surfn-mint-y-icons-git')
+conflicts=('surfn-mint-y-icons-git')
+provides=('surfn-mint-y-icons')
+depends=(
+  'surfn-icons-git'
+  'surfn-mint-y-aqua-icons-git'
+  'surfn-mint-y-blue-icons-git'
+  'surfn-mint-y-cyan-icons-git'
+  'surfn-mint-y-grey-icons-git'
+  'surfn-mint-y-navy-icons-git'
+  'surfn-mint-y-orange-icons-git'
+  'surfn-mint-y-pink-icons-git'
+  'surfn-mint-y-purple-icons-git'
+  'surfn-mint-y-red-icons-git'
+  'surfn-mint-y-sand-icons-git'
+  'surfn-mint-y-teal-icons-git'
+  'surfn-mint-y-yaru-icons-git'
+)
+source=()
+
+package() {
+  :
+}
