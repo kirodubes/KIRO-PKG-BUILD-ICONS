@@ -1,0 +1,19 @@
+# Maintainer: Erik Dubois <erik.dubois@gmail.com>
+pkgname=surfn-tela-black-icons-git
+pkgver=26.06
+pkgrel=02
+_destname1="/usr/share/icons/"
+pkgdesc="Surfn Tela Black icon theme (folders)"
+arch=('any')
+url="https://github.com/erikdubois/surfn-tela-black"
+license=('GPL3')
+makedepends=('git')
+options=(!strip !emptydirs)
+depends=('surfn-icons-git')
+source=('Surfn::git+https://github.com/erikdubois/surfn-tela-black.git')
+sha256sums=('SKIP')
+
+package() {
+  install -dm 755 ${pkgdir}${_destname1}
+  cp -r ${srcdir}/Surfn/${_destname1}* ${pkgdir}${_destname1}
+}
