@@ -1,0 +1,38 @@
+# Maintainer: Erik Dubois <erik.dubois@gmail.com>
+pkgname=neo-candy-icons-meta
+pkgver=26.06
+pkgrel=10
+pkgdesc="Neo Candy — meta package pulling the base + all folder colour themes"
+arch=('any')
+url="https://github.com/erikdubois/neo-candy-icons-meta"
+license=('GPL3')
+options=(!strip !emptydirs)
+depends=(
+  'neo-candy-icons-git'
+  'neo-candy-mint-y-meta'
+  'neo-candy-mint-x-meta'
+  'neo-candy-tela-meta'
+  'neo-candy-horst-meta'
+  'neo-candy-arc-breeze-icons-git'
+  'neo-candy-arch-blue-icons-git'
+  'neo-candy-breeze-arc-icons-git'
+  'neo-candy-breeze-dark-icons-git'
+  'neo-candy-dracul-icons-git'
+  'neo-candy-luv-icons-git'
+  'neo-candy-luv-red-icons-git'
+  'neo-candy-majestic-icons-git'
+  'neo-candy-numix-icons-git'
+  'neo-candy-numix-misty-icons-git'
+  'neo-candy-numix-polo-icons-git'
+  'neo-candy-numixs-icons-git'
+  'neo-candy-orange-icons-git'
+  'neo-candy-papirus-meta'
+  'neo-candy-qogir-icons-git'
+  'neo-candy-vertexed-icons-git'
+  'neo-candy-vimix-black-icons-git'
+)
+source=()
+
+package() {
+  :
+}
