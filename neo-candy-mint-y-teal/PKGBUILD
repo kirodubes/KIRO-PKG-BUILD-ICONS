@@ -1,0 +1,19 @@
+# Maintainer: Erik Dubois <erik.dubois@gmail.com>
+pkgname=neo-candy-mint-y-teal-icons-git
+pkgver=26.06
+pkgrel=02
+_destname1="/usr/share/icons/"
+pkgdesc="Neo Candy Mint-Y-Teal icon theme (folders)"
+arch=('any')
+url="https://github.com/erikdubois/neo-candy-mint-y-teal"
+license=('GPL3')
+makedepends=('git')
+options=(!strip !emptydirs)
+depends=('neo-candy-icons-git')
+source=('NeoCandy::git+https://github.com/erikdubois/neo-candy-mint-y-teal.git')
+sha256sums=('SKIP')
+
+package() {
+  install -dm 755 ${pkgdir}${_destname1}
+  cp -r ${srcdir}/NeoCandy/${_destname1}* ${pkgdir}${_destname1}
+}
