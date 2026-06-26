@@ -1,0 +1,32 @@
+# Maintainer: Erik Dubois <erik.dubois@gmail.com>
+pkgname=surfn-tela-meta
+pkgver=26.06
+pkgrel=04
+pkgdesc="Surfn Tela — meta package pulling the Surfn Tela base + all 14 Surfn Tela colour folder themes"
+arch=('any')
+url="https://github.com/erikdubois/surfn-tela-meta"
+license=('GPL3')
+options=(!strip !emptydirs)
+depends=(
+  'surfn-icons-git'
+  'surfn-tela-icons-git'
+  'surfn-tela-black-icons-git'
+  'surfn-tela-blue-icons-git'
+  'surfn-tela-brown-icons-git'
+  'surfn-tela-dracula-icons-git'
+  'surfn-tela-green-icons-git'
+  'surfn-tela-grey-icons-git'
+  'surfn-tela-manjaro-icons-git'
+  'surfn-tela-nord-icons-git'
+  'surfn-tela-orange-icons-git'
+  'surfn-tela-pink-icons-git'
+  'surfn-tela-purple-icons-git'
+  'surfn-tela-red-icons-git'
+  'surfn-tela-ubuntu-icons-git'
+  'surfn-tela-yellow-icons-git'
+)
+source=()
+
+package() {
+  :
+}
