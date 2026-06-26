@@ -1,0 +1,43 @@
+# Maintainer: Erik Dubois <erik.dubois@gmail.com>
+pkgname=surfn-papirus-meta
+pkgver=26.06
+pkgrel=05
+pkgdesc="Surfn Papirus — all folder colour themes (incl. custom casablanca)"
+arch=('any')
+url="https://github.com/erikdubois/surfn-papirus-meta"
+license=('GPL3')
+options=(!strip !emptydirs)
+depends=(
+  'surfn-icons-git'
+  'surfn-papirus-adwaita-icons-git'
+  'surfn-papirus-black-icons-git'
+  'surfn-papirus-bluegrey-icons-git'
+  'surfn-papirus-blue-icons-git'
+  'surfn-papirus-breeze-icons-git'
+  'surfn-papirus-brown-icons-git'
+  'surfn-papirus-carmine-icons-git'
+  'surfn-papirus-casablanca-icons-git'
+  'surfn-papirus-cyan-icons-git'
+  'surfn-papirus-darkcyan-icons-git'
+  'surfn-papirus-deeporange-icons-git'
+  'surfn-papirus-green-icons-git'
+  'surfn-papirus-grey-icons-git'
+  'surfn-papirus-indigo-icons-git'
+  'surfn-papirus-magenta-icons-git'
+  'surfn-papirus-nordic-icons-git'
+  'surfn-papirus-orange-icons-git'
+  'surfn-papirus-palebrown-icons-git'
+  'surfn-papirus-paleorange-icons-git'
+  'surfn-papirus-pink-icons-git'
+  'surfn-papirus-red-icons-git'
+  'surfn-papirus-teal-icons-git'
+  'surfn-papirus-violet-icons-git'
+  'surfn-papirus-white-icons-git'
+  'surfn-papirus-yaru-icons-git'
+  'surfn-papirus-yellow-icons-git'
+)
+source=()
+
+package() {
+  :
+}
