@@ -1,0 +1,29 @@
+# Maintainer: Erik Dubois <erik.dubois@gmail.com>
+pkgname=neo-candy-mint-y-meta
+pkgver=26.06
+pkgrel=08
+pkgdesc="Neo Candy Mint-Y — all colour folder themes"
+arch=('any')
+url="https://github.com/erikdubois/neo-candy-mint-y-meta"
+license=('GPL3')
+options=(!strip !emptydirs)
+depends=(
+  'neo-candy-icons-git'
+  'neo-candy-mint-y-aqua-icons-git'
+  'neo-candy-mint-y-blue-icons-git'
+  'neo-candy-mint-y-cyan-icons-git'
+  'neo-candy-mint-y-grey-icons-git'
+  'neo-candy-mint-y-navy-icons-git'
+  'neo-candy-mint-y-orange-icons-git'
+  'neo-candy-mint-y-pink-icons-git'
+  'neo-candy-mint-y-purple-icons-git'
+  'neo-candy-mint-y-red-icons-git'
+  'neo-candy-mint-y-sand-icons-git'
+  'neo-candy-mint-y-teal-icons-git'
+  'neo-candy-mint-y-yaru-icons-git'
+)
+source=()
+
+package() {
+  :
+}
