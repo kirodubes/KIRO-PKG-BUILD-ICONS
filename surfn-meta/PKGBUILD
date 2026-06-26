@@ -1,8 +1,8 @@
 # Maintainer: Erik Dubois <erik.dubois@gmail.com>
 pkgname=surfn-icons-meta
 pkgver=26.06
-pkgrel=02
-pkgdesc="Surfn theme — meta package pulling the base icon theme and all 29 surfn variants (icons + Plasma)"
+pkgrel=06
+pkgdesc="Surfn theme — meta package pulling the base icon theme and all surfn variants (icons + Plasma + Mint-X/Mint-Y colour metas)"
 arch=('any')
 url="https://github.com/erikdubois/surfn-meta"
 license=('Attribution-NonCommercial-ShareAlike 4.0 International Public License')
@@ -11,25 +11,23 @@ depends=(
   'surfn-icons-git'
   'surfn-arc-breeze-icons-git'
   'surfn-arch-blue-icons-git'
-  'surfn-arched-icons-git'
   'surfn-breeze-arc-icons-git'
   'surfn-breeze-dark-icons-git'
   'surfn-dracul-icons-git'
   'surfn-luv-icons-git'
   'surfn-luv-red-icons-git'
   'surfn-majestic-icons-git'
-  'surfn-mint-x-grey-icons-git'
-  'surfn-mint-y-icons-git'
+  'surfn-mint-x-meta'
+  'surfn-mint-y-meta'
+  'surfn-horst-meta'
   'surfn-numix-icons-git'
   'surfn-numix-misty-icons-git'
   'surfn-numix-polo-icons-git'
   'surfn-numixs-icons-git'
   'surfn-orange-icons-git'
-  'surfn-papirus-blue-icons-git'
-  'surfn-papirus-casablanca-icons-git'
-  'surfn-papirus-grey-icons-git'
+  'surfn-papirus-meta'
   'surfn-qogir-icons-git'
-  'surfn-tela-icons-git'
+  'surfn-tela-meta'
   'surfn-vertexed-icons-git'
   'surfn-vimix-black-icons-git'
   'surfn-plasma-dark-icons-git'
