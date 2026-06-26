@@ -1,0 +1,20 @@
+# Maintainer: Erik Dubois <erik.dubois@gmail.com>
+pkgname=surfn-mint-y-aqua-icons-git
+pkgver=26.06
+pkgrel=02
+_destname1="/usr/share/icons/"
+pkgdesc="Surfn Mint-Y-Aqua icon theme"
+arch=('any')
+url="https://github.com/erikdubois/surfn-mint-y-aqua"
+license=('GPL3')
+makedepends=('git')
+options=(!strip !emptydirs)
+depends=('surfn-icons-git')
+conflicts=('surfn-mint-y-icons-git')
+source=('Surfn::git+https://github.com/erikdubois/surfn-mint-y-aqua.git')
+sha256sums=('SKIP')
+
+package() {
+  install -dm 755 ${pkgdir}${_destname1}
+  cp -r ${srcdir}/Surfn/${_destname1}* ${pkgdir}${_destname1}
+}
