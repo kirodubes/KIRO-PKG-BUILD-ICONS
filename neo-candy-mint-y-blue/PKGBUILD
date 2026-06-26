@@ -1,0 +1,19 @@
+# Maintainer: Erik Dubois <erik.dubois@gmail.com>
+pkgname=neo-candy-mint-y-blue-icons-git
+pkgver=26.06
+pkgrel=02
+_destname1="/usr/share/icons/"
+pkgdesc="Neo Candy Mint-Y-Blue icon theme (folders)"
+arch=('any')
+url="https://github.com/erikdubois/neo-candy-mint-y-blue"
+license=('GPL3')
+makedepends=('git')
+options=(!strip !emptydirs)
+depends=('neo-candy-icons-git')
+source=('NeoCandy::git+https://github.com/erikdubois/neo-candy-mint-y-blue.git')
+sha256sums=('SKIP')
+
+package() {
+  install -dm 755 ${pkgdir}${_destname1}
+  cp -r ${srcdir}/NeoCandy/${_destname1}* ${pkgdir}${_destname1}
+}
