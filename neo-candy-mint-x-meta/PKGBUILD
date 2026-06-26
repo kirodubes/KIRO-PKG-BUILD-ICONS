@@ -1,0 +1,28 @@
+# Maintainer: Erik Dubois <erik.dubois@gmail.com>
+pkgname=neo-candy-mint-x-meta
+pkgver=26.06
+pkgrel=09
+pkgdesc="Neo Candy Mint-X — all colour folder themes"
+arch=('any')
+url="https://github.com/erikdubois/neo-candy-mint-x-meta"
+license=('GPL3')
+options=(!strip !emptydirs)
+depends=(
+  'neo-candy-icons-git'
+  'neo-candy-mint-x-aqua-icons-git'
+  'neo-candy-mint-x-blue-icons-git'
+  'neo-candy-mint-x-brown-icons-git'
+  'neo-candy-mint-x-grey-icons-git'
+  'neo-candy-mint-x-orange-icons-git'
+  'neo-candy-mint-x-pink-icons-git'
+  'neo-candy-mint-x-purple-icons-git'
+  'neo-candy-mint-x-red-icons-git'
+  'neo-candy-mint-x-sand-icons-git'
+  'neo-candy-mint-x-teal-icons-git'
+  'neo-candy-mint-x-yellow-icons-git'
+)
+source=()
+
+package() {
+  :
+}
