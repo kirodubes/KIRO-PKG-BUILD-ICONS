@@ -1,0 +1,19 @@
+# Maintainer: Erik Dubois <erik.dubois@gmail.com>
+pkgname=neo-candy-papirus-paleorange-icons-git
+pkgver=26.06
+pkgrel=04
+_destname1="/usr/share/icons/"
+pkgdesc="Neo Candy Papirus Paleorange folder colour theme"
+arch=('any')
+url="https://github.com/erikdubois/neo-candy-papirus-paleorange"
+license=('GPL3')
+makedepends=('git')
+options=(!strip !emptydirs)
+depends=('neo-candy-icons-git')
+source=('Source::git+https://github.com/erikdubois/neo-candy-papirus-paleorange.git')
+sha256sums=('SKIP')
+
+package() {
+  install -dm 755 ${pkgdir}${_destname1}
+  cp -r ${srcdir}/Source/${_destname1}* ${pkgdir}${_destname1}
+}
