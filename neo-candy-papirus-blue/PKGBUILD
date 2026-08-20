@@ -1,7 +1,7 @@
 # Maintainer: Erik Dubois <erik.dubois@gmail.com>
 pkgname=neo-candy-papirus-blue-icons-git
 pkgver=26.06
-pkgrel=04
+pkgrel=05
 _destname1="/usr/share/icons/"
 pkgdesc="Neo Candy Papirus Blue folder colour theme"
 arch=('any')
