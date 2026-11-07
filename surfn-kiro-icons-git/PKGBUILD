@@ -1,0 +1,27 @@
+# Maintainer: Erik Dubois <erik.dubois@gmail.com>
+pkgname=surfn-kiro-icons-git
+pkgver=26.11
+pkgrel=20
+_destname="/usr/share/icons/"
+_licensedir="/usr/share/kiro/licenses/"
+pkgdesc="Surfn Kiro is Surfn tuned for Plasma light and dark (full theme), with the Plasma global themes Surfn Kiro Dark and Light."
+arch=('any')
+url="https://github.com/kirodubes/surfn-kiro"
+license=('Attribution-NonCommercial-ShareAlike 4.0 International Public License')
+makedepends=('git')
+options=(!strip !emptydirs)
+source=('Surfn-Kiro::git+https://github.com/kirodubes/surfn-kiro.git')
+sha256sums=('SKIP')
+
+package() {
+  find ${srcdir}/Surfn-Kiro/usr/share/icons -type f -name "*.sh" -exec chmod 644 '{}' \;
+  install -dm 755 ${pkgdir}${_destname}
+  cp -r ${srcdir}/Surfn-Kiro/usr/share/icons/* ${pkgdir}${_destname}
+  # Global themes Surfn Kiro Dark / Light (Plasma)
+  install -dm 755 ${pkgdir}/usr/share/plasma/look-and-feel
+  cp -r ${srcdir}/Surfn-Kiro/usr/share/plasma/look-and-feel/* ${pkgdir}/usr/share/plasma/look-and-feel/
+  # Surfn Kiro's licence plus the lists of icons made by others, which keep their own licence
+  install -dm755 ${pkgdir}${_licensedir}${pkgname}
+  install -m644 ${srcdir}/Surfn-Kiro/LICENSE ${srcdir}/Surfn-Kiro/LICENSE-breeze ${srcdir}/Surfn-Kiro/LICENSE-third-party \
+    ${pkgdir}${_licensedir}${pkgname}/
+}
